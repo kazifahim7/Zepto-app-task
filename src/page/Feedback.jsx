@@ -1,8 +1,12 @@
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const Feedback = () => {
     return (
-        <div className="py-20">
+        <div data-aos="fade-down" data-aos-offset="500"
+            data-aos-duration="500" className="py-20">
             <section className="py-10 bg-gray-100 sm:py-16 lg:py-24">
                 <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <div className="max-w-2xl mx-auto text-center">

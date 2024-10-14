@@ -1,8 +1,12 @@
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const Company = () => {
     return (
-        <div>
+        <div data-aos="fade-down" data-aos-offset="500"
+            data-aos-duration="500">
             <section className="py-10 bg-white sm:py-16 lg:py-24">
                 <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <div className="max-w-2xl mx-auto text-center">

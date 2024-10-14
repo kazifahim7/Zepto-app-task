@@ -1,8 +1,12 @@
 
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 const Connect = () => {
     return (
-        <div>
+        <div data-aos="fade-down" data-aos-offset="500"
+            data-aos-duration="500">
             <section className="pt-10 pb-8 overflow-hidden bg-gray-100 sm:pt-16 lg:pt-24">
                 <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                     <div className="max-w-2xl mx-auto text-center">

@@ -8,17 +8,19 @@ import MainSection from "./MainSection";
 import Price from "./Price";
 
 
+
+
 const Home = () => {
     return (
         <div className="">
         <Header></Header>
         <About></About>
-        <MainSection></MainSection>
-        <Inspire></Inspire>
-        <Feedback></Feedback>
-        <Company></Company>
-            <Connect></Connect>
-            <Price></Price>
+            <MainSection ></MainSection>
+            <Inspire></Inspire>
+            <Feedback></Feedback>
+            <Company ></Company>
+            <Connect ></Connect>
+            <Price ></Price>
 
         </div>
     );

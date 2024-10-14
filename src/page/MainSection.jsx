@@ -1,11 +1,16 @@
 import { useState } from "react";
 import { IoSearch } from "react-icons/io5";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 
 const MainSection = () => {
     const [activeTab, setActiveTab] = useState(1);
     return (
-        <div className="container mx-auto">
+        <div data-aos="fade-down" data-aos-offset="500"
+            data-aos-duration="500" className="container mx-auto">
             <h6 className="text-center text-main-color text-xs">New Arrival</h6>
             <h1 className="text-4xl text-center font-extrabold pt-4">Latest Book Release</h1>
            <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center">
