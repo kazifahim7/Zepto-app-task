@@ -38,9 +38,9 @@ const Navbar = () => {
                 </div>
 
 
-                <div className="mx-auto space-x-3 lg:pt-0 pt-3">
+                <div className="mx-auto space-x-6 lg:pt-0 pt-3">
                     <NavLink
-                        to="/signup"
+                        to="/signUp"
                         className="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                         activeClassName="text-blue-600"
                     >
@@ -48,7 +48,7 @@ const Navbar = () => {
                     </NavLink>
 
                     <NavLink
-                        to="/signin"
+                        to="/signIn"
                         className="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                         activeClassName="text-blue-600"
                     >

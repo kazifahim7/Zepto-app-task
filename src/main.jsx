@@ -11,6 +11,8 @@ import Mainlayout from './MainlayOut/Mainlayout';
 import Error from './Error/Error';
 import Home from './page/Home';
 import Contact from './page/Contact';
+import Register from './page/Register';
+import Login from './page/Login';
 
 const router = createBrowserRouter([
   {
@@ -24,9 +26,18 @@ const router = createBrowserRouter([
     {
       path: '/contact',
       element:<Contact></Contact>
-    }
+    },
+   
   
   ]
+  },
+  {
+    path: '/signUp',
+    element: <Register></Register>
+  },
+  {
+    path: '/signIn',
+    element:<Login></Login>
   },
 ]);
 
