@@ -6,7 +6,7 @@ import Footer from "../shareComponents/Footer";
 const Mainlayout = () => {
     return (
         <div>
-          <div className="lg:absolute w-full">
+          <div className="">
 
             <Navbar></Navbar>
           </div>

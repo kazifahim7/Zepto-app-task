@@ -13,6 +13,8 @@ import Home from './page/Home';
 import Contact from './page/Contact';
 import Register from './page/Register';
 import Login from './page/Login';
+import BookDetails from './page/BookDeatails';
+import Wishlist from './page/Wishlist';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +29,15 @@ const router = createBrowserRouter([
       path: '/contact',
       element:<Contact></Contact>
     },
+    {
+      path:"/wishlist",
+      element:<Wishlist></Wishlist>
+    },
+    {
+      path: "/book/:id",
+      loader: ({params}) => fetch(`https://gutendex.com/books/?ids=${params.id}`),
+      element:<BookDetails></BookDetails>,
+    }
    
   
   ]
